@@ -26,10 +26,10 @@ class ManageScreen extends StatelessWidget {
   Widget build(BuildContext context) => ListView(
     padding: const EdgeInsets.all(20),
     children: [
-      const Text(
-        'Gerencie suas tags NFC',
-        style: TextStyle(fontSize: 27, fontWeight: FontWeight.bold),
-      ),
+      // const Text(
+      //   'Gerencie suas tags NFC',
+      //   style: TextStyle(fontSize: 27, fontWeight: FontWeight.bold),
+      // ),
       const SizedBox(height: 8),
       Text(
         'Leia, edite ou limpe tags NDEF diretamente no Android.',

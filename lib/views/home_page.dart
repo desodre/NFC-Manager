@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> {
     animation: viewModel,
     builder: (context, _) => Scaffold(
       appBar: AppBar(
-        title: Text(['Gerenciar', 'Recentes', 'Configurações'][selectedIndex]),
+        title: Text(['Gerencie suas tags NFC', 'Tags recentes', 'Configurações'][selectedIndex], style: TextStyle(fontWeight: FontWeight.w700),),
       ),
       body: IndexedStack(
         index: selectedIndex,

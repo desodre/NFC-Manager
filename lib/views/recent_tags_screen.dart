@@ -19,7 +19,7 @@ class RecentTagsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (loading) return const Center(child: CircularProgressIndicator());
-    if (entries.isEmpty)
+    if (entries.isEmpty) {
       return const Center(
         child: Padding(
           padding: EdgeInsets.all(32),
@@ -38,17 +38,18 @@ class RecentTagsScreen extends StatelessWidget {
           ),
         ),
       );
+    }
     return ListView(
       padding: const EdgeInsets.all(16),
       children: [
         Row(
           children: [
-            const Expanded(
-              child: Text(
-                'Tags recentes',
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-              ),
-            ),
+            // const Expanded(
+            //   child: Text(
+            //     'Tags recentes',
+            //     style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            //   ),
+            // ),
             TextButton.icon(
               onPressed: () => _confirmClear(context),
               icon: const Icon(Icons.delete_sweep_outlined),
